@@ -15,6 +15,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 /* MENU */
 
 .contenedor-header{
@@ -80,7 +82,8 @@ text-decoration: none;
     color: #fff;
     display: flex;
     align-items: center;
-    min-width: 320px;
+    
+    overflow: hidden;
 }
 .inicio .contenedor-banner{
     padding: 20px;
@@ -89,6 +92,7 @@ text-decoration: none;
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    overflow: hidden;
 }
 
 .inicio .contenedor-banner img {
@@ -96,8 +100,10 @@ text-decoration: none;
     border: 10px solid var(--color-verde);
     display: block;
     width: 80%;
+    height: 230px;
     margin: auto ;
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .inicio .contenedor-banner h1 {
@@ -133,11 +139,13 @@ text-decoration: none;
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
+    overflow: hidden;
 }
 
 .sobremi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    overflow: hidden;
 }
 .sobremi h2{
     font-size: 48px;
@@ -245,11 +253,13 @@ text-decoration: none;
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
+    overflow: hidden;
 }
 
 .skills .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    overflow: hidden;
 }
 .skills h2{
     font-size: 48px;
@@ -399,11 +409,13 @@ text-decoration: none;
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
+    overflow: hidden;
 }
 
 .curriculum .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    overflow: hidden;
 }
 .curriculum h2{
     font-size: 48px;
@@ -516,10 +528,12 @@ text-decoration: none;
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
+    overflow: hidden;
 }
 
 .porfolio .contenido-seccion {
     max-width: 1100px;
+    overflow: hidden;
     margin: auto;
 }
 .porfolio h2{
@@ -537,13 +551,15 @@ text-decoration: none;
 
 .porfolio .galeria .proyecto{
     position: relative;
-    max-width: 340px;
-    height: fit-content;
+    max-width: 350px;
+    height: 270px;
     margin: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 .porfolio .galeria .proyecto img {
     width: 100%;
+    height: 270px;
     display: block;
 }
 .porfolio .galeria .proyecto .overlay {
@@ -562,7 +578,6 @@ text-decoration: none;
 }
 
 .porfolio .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
     transition: 1s;
 }
 
@@ -571,8 +586,28 @@ text-decoration: none;
 }
 
 .porfolio .galeria .proyecto .overlay:hover h3 {
-    margin: 40px ;
+    margin: 25px ;
     
+}
+
+.porfolio .galeria .proyecto .overlay i{
+    transition: 1s;
+
+}
+
+.porfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.porfolio .galeria .proyecto .overlay:hover i {
+    margin-top: 20px ;
+}
+
+.icon-tec {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SECCION DE CONTACTO */
@@ -587,6 +622,7 @@ text-decoration: none;
 .contacto .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    overflow: hidden;
 }
 
 .contacto h2{
@@ -725,8 +761,8 @@ img{
     margin-bottom: 15px;
     padding: 5px;
     background-color: #2a65a8be;
-    border: 1px solid #131517;
-    width: 200px;
+    border: 1px solid #848e9871;
+    width: 45%;
     margin: auto;
     border-radius: 1rem;
 }
@@ -817,6 +853,17 @@ img{
     }
 }
 
+@media (max-width:400px) {
+    .porfolio .galeria .proyecto{
+        max-width: 100%;
+        height: 250px;
+    }
+    .porfolio .galeria .proyecto img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -830,3 +877,5 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
     border: 3px solid white;
 }
+
+
