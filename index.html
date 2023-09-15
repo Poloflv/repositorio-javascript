@@ -11,665 +11,682 @@
     <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
-    <!-- Menu Encabezado -->
-    <div class="contenedor-header">
-        <header class="animated flash">
-            <div class="logo">
-                <a href="#">Polo</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
 
-    <!-- SECCION INICIO -->
-
-    <section id="inicio" class="inicio">
-        <div class="contenedor-banner animated bounceInUp">
-            
-            <div class="contenedor-img">
-                <img src="./img/polo.jpg" alt="Creador" class="Creador">
-            </div>
-            
-            <h1>Kevin Polo</h1>
-            <h2>Estudiante de Academlo</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100004976535839&mibextid=ZbWKwL" target="_blank" class="jello"><i class="fa-brands fa-facebook-f "></i></a>
-                <a href="https://wa.me/+573007188851" target="_blank" class="jello"><i class='bx bxl-whatsapp '></i></i></a>
-                <a href="https://www.linkedin.com/in/kevin-yesid-polo-benavides-859a69139/" target="_blank" class="jello"><i class="fa-brands fa-linkedin-in "></i></a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- SECCION SOBRE MI  -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Kevin Polo.</span>Estoy estudiando programacion desde cuarentena y me he certificado con udemy en algunas tecnologias como Flutter, Bubble, CSS, HTML, Javascript entre otras, ademas de estar estudiando en una academia como lo seria Academlo, que me ha ayudado a tener un enfoque diferente a este mundo de la programacion.</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
+    <div>
+        
+        <!-- Menu Encabezado -->
+        <div class="contenedor-header">
+            <header class="animated flash">
+                <div class="logo">
+                    <a href="#">Polo</a>
+                </div>
+                <nav id="nav">
                     <ul>
-
-                        <li>
-                            <strong>Telefono</strong>
-                            3007188851
-                        </li>
-
-                        <li>
-                            <strong>Email</strong>
-                            kevinpolo316@gmail.com
-                        </li>
-
-
-                        <li>
-                            <strong>Dirección</strong>
-                            Popayan-Cauca 
-                        </li>
-
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Estudiante de programacion</span>
-                        </li>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>DIBUJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <span>CALISTENIA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-kitchen-set"></i>
-                            <span>COCINAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>TROTAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LEER</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <embed src="./Kevin_Yesid_Polo_Benavides CV.pdf" type="application/pdf" width="100%" height="600px" />
-                <span class="overlay"></span>
-            </button>
+            </header>
         </div>
-    </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Habilidades tecnicas</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Bubble</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Flutterflow</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>React</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- Professional Skills -->
-
-                <div class="col">
-                    <h3>Habilidades profesionales</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Motivación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Bubble</h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                            Bubble es un lenguaje de programación visual, una plataforma de desarrollo sin código y una plataforma de aplicaciones como servicio, desarrollada por Bubble Group, que permite a personas sin conocimientos técnicos crear aplicaciones web sin necesidad de escribir código.
-
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item izq">
-                        <h4>Flutter</h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                            Flutter es un SDK de código fuente abierto de desarrollo de aplicaciones móviles creado por Google. Suele usarse para desarrollar interfaces de usuario para aplicaciones en Android, iOS y Web así como método primario para crear aplicaciones para Google Fuchsia.​ 
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item izq">
-                        <h4>Master en Javascript</h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                            JavaScript, jQuery, TypeScript, Angular, NodeJS, MEAN Stack, etc.
-                            JavaScript, el lenguaje de programación más popular en la actualidad. <br>
-
-                                jQuery, la librería más popular y utilizada en JavaScript.
-
-                                Maquetación web, creando varios proyectos web.
-
-                                TypeScript, el superset de Microsoft que sube de nivel a JavaScript.
-
-                                POO, Programación Orientada a Objetos en JavaScript.
-
-                                Angular, el framework para JavaScript estándar para desarrollar aplicaciones web SPA, dinamicas, modernas y escalables.
-
-                                NodeJS, tecnología que nos permite hacer desarrollos back-end usando únicamente JavaScript
-
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi">
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
+        
+        <!-- SECCION INICIO -->
+    
+        <section id="inicio" class="inicio">
+            <div class="contenedor-banner animated bounceInUp">
                 
-                <div class="col derecha">
-                    <h3>👨‍🎓👨‍💻</h3>
-                    <div class="item der">
-                        <h4>Dart</h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                            Dart es un lenguaje de programación de código abierto, desarrollado por Google. Fue revelado en la conferencia goto; en Aarhus, Dinamarca el 10 de octubre de 2011.​ 
-                            El lenguaje de programación Dart se puede ejecutar de dos maneras; en una máquina virtual (MV), o en un motor de Javascript utilizando un compilador para traducir el código. Esto le permite adaptarse a cualquier navegador. Lenguaje basado en clases e interfaces o POO.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item der">
-                        <h4>Git</h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2023</span>
-                        <p>
-                            Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.
-
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item der">
-                        <h4>Curso Online Academlo</h4>
-                        <span class="casa">Academlo</span>
-                        <span class="fecha">2023</span>
-                        <p>Javascript Avanzado <br>
-
-                            Programación Backend con Node.js <br>
-                            Conoce Javascript a profundidad y entiende conceptos como callbacks, closures, callstack. También aprenderás porqué Javascript es asíncrono y como trabajar correctamente con la asincronía. Además aprenderás cuál es el propósito de Javascript en la web y cómo y porqué puede comunicarse con tu página web y con los navegadores. <br>
-                            
-                            Backend Avanzado y Bases de Datos <br>
-                            
-
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod">
-
-                            </div>
-                        </div>
-                    </div>
-
-
+                
+                <div class="contenedor-img">
+                    <img src="./img/polo.jpg" alt="Creador" class="Creador">
                 </div>
-
-
+                
+                <h1>Kevin Polo</h1>
+                <h2>Estudiante de Academlo</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100004976535839&mibextid=ZbWKwL" target="_blank" class="jello"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="https://wa.me/+573001954511" target="_blank" class="jello"><i class='bx bxl-whatsapp '></i></i></a>
+                    <a href="https://www.linkedin.com/in/kevin-yesid-polo-benavides-859a69139/" target="_blank" class="jello"><i class="fa-brands fa-linkedin-in "></i></a>
+                    <a href="https://github.com/Poloflv" target="_blank" class="jello"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- SECCION PROYECTOS -->
-
-    <section class="porfolio " id="portfolio">
-        <div class="contenido-seccion">
-            <h2>PROYECTOS</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="./img/empogloria.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Proyecto Empogloria</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3'  ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://empogloria-proyect-p.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/empogloria-proyect" target="_blank">codigo</a></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/e-commerse.jpg" alt="">
-                    <div class="overlay">
-                        <h3>E-commerse</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3'  ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://e-commerse-academlo-polo.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/E-commerce-academlo" target="_blank">codigo</a></button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-
-                    <img src="./img/front-end-mentor.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Front-end-mentor</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3'  ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://trabajos-front-end-mentor-polo.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/trabajos-front-end-mentor-Polo" target="_blank">codigo</a></button>
-                        </div>
-                        
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/infogalax.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Infogalax</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-css3'  ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div  style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://galaxy-random-p.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/galaxy-random" target="_blank">codigo</a></button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/clima.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Pagina del clima</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div  style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://clima-react-p.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/clima-react" target="_blank">codigo</a></button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/anime.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Buscador de animes</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://search-anime-p.netlify.app" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/buscadorAnime" target="_blank">codigo</a></button>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-                <div class="proyecto">
-                    <img src="./img/marioTailwind.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Super Mario</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://super-mario-p.netlify.app/" target="_blank">sitio web</a></button>
-                            <button class="sitio"><a href="https://github.com/Poloflv/super-mario-p" target="_blank">codigo</a></button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/allCharactersRick.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Rick y Morty V1</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://all-characters-rickandmorty-p.netlify.app/" target="_blank">sitio web</a></button>  
-                            <button class="sitio"><a href="https://github.com/Poloflv/AllCharactersRickAndMorty" target="_blank">codigo</a></button> 
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/searchRickAndMorty.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Rick y Morty v2</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://search-rick-and-morty-p.netlify.app/" target="_blank">sitio web</a></button>    
-                            <button class="sitio"><a href="https://github.com/Poloflv/searchGalaxyRickAndMorty" target="_blank">codigo</a></button>     
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-                <div class="proyecto">
-                    <img src="./img/countries.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Api de ciudades</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://filter-pais-p.netlify.app/" target="_blank">sitio web</a></button>    
-                            <button class="sitio"><a href="https://github.com/Poloflv/paisFilter" target="_blank">codigo</a></button>    
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/crud-usuarios.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Crud de usuarios</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://crud-usuarios-p.netlify.app/" target="_blank">sitio web</a></button> 
-                            <button class="sitio"><a href="https://github.com/Poloflv/crud-usuarios" target="_blank">codigo</a></button>    
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="./img/pokedex.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Pokedex</h3>
-                        <p>Tecnologias</p>
-                        <div class="icon-tec">
-                            <i class='bx bxl-react' ></i>
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div style="display: flex; margin-top: 25px; gap: 5px;">
-                            <button class="sitio"><a href="https://poke-api-p.netlify.app/pokedex" target="_blank">sitio web</a></button>     
-                            <button class="sitio"><a href="https://github.com/Poloflv/PokeApi" target="_blank">sitio web</a></button>    
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <!--    seccion contacto -->
-    <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <form class="col" id="form">
-                    <input  type="text" placeholder="Tú Nombre" name="name" required>
-                    <input type="number" placeholder="Número telefónico" name="phone" required>
-                    <input type="email" placeholder="Dirección de correo" name="email" required>
-                    <input type="text" placeholder="Tema" name="teme">
-                    <textarea name=""  cols="30" rows="10" placeholder="Mensaje" name="menssage" required></textarea>
-                    <input type="submit" id="button" value="ENVIAR MENSAJE" >
-                    
-                </form>
-                <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('TKuYvaBclb4LzvtWQ')
-</script>
-                <!-- Mapa -->
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15944.305540775757!2d-76.5631258!3d2.48166495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1690698477501!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
+            
+        </section>
+    
+    
+    
+    
+    
+        <!-- SECCION SOBRE MI  -->
+        <section id="sobremi" class="sobremi">
+            
+            <div class="contenido-seccion">
+                <h2>Sobre Mi</h2>
+                <p><span>Hola, soy Kevin Polo.</span>Estoy estudiando programacion desde cuarentena y me he certificado con udemy en algunas tecnologias como Flutter, Bubble, CSS, HTML, Javascript entre otras, ademas de estar estudiando en una academia como lo seria Academlo, que me ha ayudado a tener un enfoque diferente a este mundo de la programacion.</p>
+    
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
                         <ul>
+    
                             <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Popayan-Cauca
+                                <strong>Telefono</strong>
+                                3001954511
                             </li>
+    
                             <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 3001788851
+                                <strong>Email</strong>
+                                kevinpolo316@gmail.com
                             </li>
+    
+    
                             <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: kevinpolo316@gmail.com
+                                <strong>Dirección</strong>
+                                Popayan-Cauca 
+                            </li>
+    
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Estudiante de programacion</span>
                             </li>
                         </ul>
                     </div>
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Habilidades</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-square-js"></i>
+                                <span>JAVASCRIPT</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-react"></i>
+                                <span>REACT</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-angular"></i>
+                                <span>ANGULAR</span>
+                            </div>
+                            <div class="interes">
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <span>TAILWIND</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>REACT VITE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-npm"></i>
+                                <span>NPM</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <embed src="./Kevin_Yesid_Polo_Benavides CV.pdf" type="application/pdf" width="100%" height="600px" />
+                    <span class="overlay"></span>
+                </button>
+                
+            </div>
+        </section>
+    
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>FUENTES</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Tiempo invertido en 2 años:</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>89%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>Bubble</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>Flutterflow</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    <!-- Professional Skills -->
+    
+                    <div class="col">
+                        <h3>Sitios de aprendizaje:</h3>
+                        <div class="skill">
+                            <span>Udemy</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>Documentación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>YouTube</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>Academlo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill">
+                            <span>Tecnólogo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <!-- SECCION CURRICULUM -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Bubble</h4>
+                            <span class="casa">Udemy</span>
+                            <span class="fecha">2022</span>
+                            <p>
+                                Bubble es un lenguaje de programación visual, una plataforma de desarrollo sin código y una plataforma de aplicaciones como servicio, desarrollada por Bubble Group, que permite a personas sin conocimientos técnicos crear aplicaciones web sin necesidad de escribir código.
+    
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item izq">
+                            <h4>Flutter</h4>
+                            <span class="casa">Udemy</span>
+                            <span class="fecha">2022</span>
+                            <p>
+                                Flutter es un SDK de código fuente abierto de desarrollo de aplicaciones móviles creado por Google. Suele usarse para desarrollar interfaces de usuario para aplicaciones en Android, iOS y Web así como método primario para crear aplicaciones para Google Fuchsia.​ 
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item izq">
+                            <h4>Master en Javascript</h4>
+                            <span class="casa">Udemy</span>
+                            <span class="fecha">2022</span>
+                            <p>
+                                JavaScript, jQuery, TypeScript, Angular, NodeJS, MEAN Stack, etc.
+                                JavaScript, el lenguaje de programación más popular en la actualidad. <br>
+    
+                                    jQuery, la librería más popular y utilizada en JavaScript.
+    
+                                    Maquetación web, creando varios proyectos web.
+    
+                                    TypeScript, el superset de Microsoft que sube de nivel a JavaScript.
+    
+                                    POO, Programación Orientada a Objetos en JavaScript.
+    
+                                    Angular, el framework para JavaScript estándar para desarrollar aplicaciones web SPA, dinamicas, modernas y escalables.
+    
+                                    NodeJS, tecnología que nos permite hacer desarrollos back-end usando únicamente JavaScript
+    
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    
+                    <div class="col derecha">
+                        <h3>👨‍🎓👨‍💻</h3>
+                        <div class="item der">
+                            <h4>Dart</h4>
+                            <span class="casa">Udemy</span>
+                            <span class="fecha">2022</span>
+                            <p>
+                                Dart es un lenguaje de programación de código abierto, desarrollado por Google. Fue revelado en la conferencia goto; en Aarhus, Dinamarca el 10 de octubre de 2011.​ 
+                                El lenguaje de programación Dart se puede ejecutar de dos maneras; en una máquina virtual (MV), o en un motor de Javascript utilizando un compilador para traducir el código. Esto le permite adaptarse a cualquier navegador. Lenguaje basado en clases e interfaces o POO.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item der">
+                            <h4>Git</h4>
+                            <span class="casa">Udemy</span>
+                            <span class="fecha">2023</span>
+                            <p>
+                                Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.
+    
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item der">
+                            <h4>Curso Online Academlo</h4>
+                            <span class="casa">Academlo</span>
+                            <span class="fecha">2023</span>
+                            <p>Javascript Avanzado <br>
+    
+                                Programación Backend con Node.js <br>
+                                Conoce Javascript a profundidad y entiende conceptos como callbacks, closures, callstack. También aprenderás porqué Javascript es asíncrono y como trabajar correctamente con la asincronía. Además aprenderás cuál es el propósito de Javascript en la web y cómo y porqué puede comunicarse con tu página web y con los navegadores. <br>
+                                
+                                Backend Avanzado y Bases de Datos <br>
+                                
+    
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- SECCION PROYECTOS -->
+    
+        <section class="porfolio " id="portfolio">
+            <div class="contenido-seccion">
+                <h2>PROYECTOS</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="./img/pageMusic.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Pagina de musica</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-redux' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://empogloria-proyect-p.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/empogloria-proyect" target="_blank">codigo</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/pokedex.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Pokedex</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://poke-api-p.netlify.app/pokedex" target="_blank">sitio web</a></button>     
+                                <button class="sitio"><a href="https://github.com/Poloflv/PokeApi" target="_blank">sitio web</a></button>    
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/e-commerse.jpg" alt="">
+                        <div class="overlay">
+                            <h3>E-commerse</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-html5' ></i>
+                                <i class='bx bxl-css3'  ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://e-commerse-academlo-polo.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/E-commerce-academlo" target="_blank">codigo</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+    
+                        <img src="./img/front-end-mentor.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Front-end-mentor</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-html5' ></i>
+                                <i class='bx bxl-css3'  ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://trabajos-front-end-mentor-polo.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/trabajos-front-end-mentor-Polo" target="_blank">codigo</a></button>
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/infogalax.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Infogalax</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-css3'  ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div  style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://galaxy-random-p.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/galaxy-random" target="_blank">codigo</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/clima.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Pagina del clima</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div  style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://clima-react-p.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/clima-react" target="_blank">codigo</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/anime.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Buscador de animes</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://search-anime-p.netlify.app" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/buscadorAnime" target="_blank">codigo</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="proyecto">
+                        <img src="./img/marioTailwind.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Super Mario</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://super-mario-p.netlify.app/" target="_blank">sitio web</a></button>
+                                <button class="sitio"><a href="https://github.com/Poloflv/super-mario-p" target="_blank">codigo</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/allCharactersRick.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Rick y Morty V1</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://all-characters-rickandmorty-p.netlify.app/" target="_blank">sitio web</a></button>  
+                                <button class="sitio"><a href="https://github.com/Poloflv/AllCharactersRickAndMorty" target="_blank">codigo</a></button> 
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/searchRickAndMorty.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Rick y Morty v2</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://search-rick-and-morty-p.netlify.app/" target="_blank">sitio web</a></button>    
+                                <button class="sitio"><a href="https://github.com/Poloflv/searchGalaxyRickAndMorty" target="_blank">codigo</a></button>     
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="proyecto">
+                        <img src="./img/countries.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Api de ciudades</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://filter-pais-p.netlify.app/" target="_blank">sitio web</a></button>    
+                                <button class="sitio"><a href="https://github.com/Poloflv/paisFilter" target="_blank">codigo</a></button>    
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="proyecto">
+                        <img src="./img/crud-usuarios.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Crud de usuarios</h3>
+                            <p>Tecnologias</p>
+                            <div class="icon-tec">
+                                <i class='bx bxl-react' ></i>
+                                <i class='bx bxl-tailwind-css' ></i>
+                                <i class='bx bxl-javascript' ></i>
+                            </div>
+                            <div style="display: flex; margin-top: 25px; gap: 5px;">
+                                <button class="sitio"><a href="https://crud-usuarios-p.netlify.app/" target="_blank">sitio web</a></button> 
+                                <button class="sitio"><a href="https://github.com/Poloflv/crud-usuarios" target="_blank">codigo</a></button>    
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    
+    
+    
+    
+                </div>
+            </div>
+        </section>
+    
+        <!--    seccion contacto -->
+        <section class="contacto" id="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <form class="col" id="form">
+                        <input  type="text" placeholder="Tú Nombre" name="name" required>
+                        <input type="number" placeholder="Número telefónico" name="phone" required>
+                        <input type="email" placeholder="Dirección de correo" name="email" required>
+                        <input type="text" placeholder="Tema" name="teme">
+                        <textarea name=""  cols="30" rows="10" placeholder="Mensaje" name="menssage" required></textarea>
+                        <input type="submit" id="button" value="ENVIAR MENSAJE" >
+                        
+                    </form>
+                    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('TKuYvaBclb4LzvtWQ')
+    </script>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15944.305540775757!2d-76.5631258!3d2.48166495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1690698477501!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Popayan-Cauca
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamanos: 3001954511
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: kevinpolo316@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100004976535839&mibextid=ZbWKwL" target="_blank" class="jello"><i class="fa-brands fa-facebook-f "></i></a>
+                <a href="https://wa.me/+573001954511" target="_blank" class="jello"><i class='bx bxl-whatsapp '></i></i></a>
+                <a href="https://www.linkedin.com/in/kevin-yesid-polo-benavides-859a69139/" target="_blank" class="jello"><i class="fa-brands fa-linkedin-in "></i></a>
+            </div>
+        </footer>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100004976535839&mibextid=ZbWKwL" target="_blank" class="jello"><i class="fa-brands fa-facebook-f "></i></a>
-            <a href="https://wa.me/+573007188851" target="_blank" class="jello"><i class='bx bxl-whatsapp '></i></i></a>
-            <a href="https://www.linkedin.com/in/kevin-yesid-polo-benavides-859a69139/" target="_blank" class="jello"><i class="fa-brands fa-linkedin-in "></i></a>
-        </div>
-    </footer>
+    </div>
 
     <script src="./script.js"></script>
 </body>
