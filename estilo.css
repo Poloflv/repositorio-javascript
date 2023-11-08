@@ -1,43 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@400;700&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
 :root{
-    --color-verde: #2a65a8;
-    --color-verde-aprendizaje: #2a65a8aa;
-    --color-background: #1e2326;
-    --color-texto: #fff;
-    --color-arriba: rgba(30,35,38,.8);
-    --color-abajo: rgba(30,35,38,1);
-    --color-block: #252A2E;
-    --color-block-aprendizaje: #555555;
-    --color-scroll: white;
-    --VeryLightGray: hsl(0, 0%, 98%);
-    --bg: #fff;
-    --color: #000;
-    
-    /* ejemplo */
-    --primary-100:#0085ff;
-    --primary-200:#69b4ff;
-    --primary-300:#e0ffff;
-    --accent-100:#006fff;
-    --accent-200:#e1ffff;
-    --text-100:#FFFFFF;
-    --text-200:#9e9e9e;
-    --bg-100:#1E1E1E;
-    --bg-200:#2d2d2d;
-    --bg-300:#454545;
-      
-}
 
-
-
-body{
-    background-color: var(--bg-100);
-    color: var(--text-100);
-
-    transition:background-color 0.5s,color 0.5s  ;
-}
-
-body.darkmode {
     background-color: var(--bg-100);
     color: var(--text-100);
 
@@ -55,7 +19,42 @@ body.darkmode {
     --bg-100:#E6E6FA;
     --bg-200:#D2D2F6;
     --bg-300:#FFFFFF;
-      
+}
+
+
+
+body{
+    background-color: var(--bg-100);
+    color: var(--text-100);
+
+    transition:background-color 0.5s,color 0.5s  ;
+}
+
+body.darkmode {
+    --color-verde: #2a65a8;
+    --color-verde-aprendizaje: #2a65a8aa;
+    --color-background: #1e2326;
+    --color-texto: #fff;
+    --color-arriba: rgba(30,35,38,.8);
+    --color-abajo: rgba(30,35,38,1);
+    --color-block: #252A2E;
+    --color-block-aprendizaje: #c5c1c19e;
+    --color-scroll: white;
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --bg: #fff;
+    --color: #000;
+    
+    /* ejemplo */
+    --primary-100:#0085ff;
+    --primary-200:#69b4ff;
+    --primary-300:#e0ffff;
+    --accent-100:#006fff;
+    --accent-200:#e1ffff;
+    --text-100:#FFFFFF;
+    --text-200:#9e9e9e;
+    --bg-100:#1E1E1E;
+    --bg-200:#2d2d2d;
+    --bg-300:#454545;
 }
 
 
